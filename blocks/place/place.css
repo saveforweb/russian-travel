@@ -1,23 +1,26 @@
 .place {
   display: grid;
-  grid-template-columns: minmax(440px, 460px) minmax(456px, 484px);
+  grid-template-columns: 460px auto;
   grid-template-rows: min-content min-content;
   gap: 48px 40px;
 }
 
+
 @media screen and (max-width:1279px) {
   .place {
-    grid-template-columns: minmax(440px, 460px) minmax(456px, 484px);
+    grid-template-columns: 440px auto;
     gap: 48px 32px;
   }
 }
 
+
 @media screen and (max-width:1023px) {
   .place {
-    grid-template-columns: minmax(340px, 440px) minmax(352px, 100%);
+    grid-template-columns: 340px auto;
     gap: 48px 28px;
   }
 }
+
 
 @media screen and (max-width:767px) {
   .place {
